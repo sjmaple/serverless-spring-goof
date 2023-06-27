@@ -16,6 +16,8 @@ import goof.repository.TodoRepository;
 
 @Component("CreateTodoFunction")
 public class CreateTodoFunction implements Function<TodoRequest, TodoResponse> {
+
+	String password = "SecretPassword";
 	
 	@Autowired
 	TodoRepository repository;
